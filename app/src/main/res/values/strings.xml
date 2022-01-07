@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Java URL Package</string>
+    <string name="note">Know the URL</string>
+    <string name="instruction">Enter URL here</string>
+    <string name="clear">CLEAR</string>
+    <string name="ans">Your answer</string>
+    <string name="text2">Click to know</string>
+    <string name="host">Host</string>
+    <string name="port">Port</string>
+    <string name="protocol">Protocol</string>
+    <string name="path">Path</string>
+    <string name="result">It is -</string>
+</resources>
