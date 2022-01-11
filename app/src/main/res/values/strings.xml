@@ -8,6 +8,8 @@
     <string name="host">Host</string>
     <string name="port">Port</string>
     <string name="protocol">Protocol</string>
+    <string name="query">Query</string>
     <string name="path">Path</string>
-    <string name="result">It is -</string>
+    <string name="result">Result</string>
+    <string name="error">Enter URL First</string>
 </resources>
