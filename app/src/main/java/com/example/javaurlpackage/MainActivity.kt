@@ -12,23 +12,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val input = findViewById<EditText>(R.id.editText)
-        val ip = input.text.toString()
-
         val host = findViewById<Button>(R.id.button1)
-        host.setOnClickListener { toFindHost(ip) }
+        host.setOnClickListener { toFindHost() }
 
         val port = findViewById<Button>(R.id.button2)
-        port.setOnClickListener { toFindPort(ip) }
+        port.setOnClickListener { toFindPort() }
 
         val path = findViewById<Button>(R.id.button3)
-        path.setOnClickListener { toFindPath(ip) }
+        path.setOnClickListener { toFindPath() }
 
         val protocol = findViewById<Button>(R.id.button4)
-        protocol.setOnClickListener { toFindProtocol(ip) }
+        protocol.setOnClickListener { toFindProtocol() }
 
         val query = findViewById<Button>(R.id.button5)
-        query.setOnClickListener { toFindQuery(ip) }
+        query.setOnClickListener { toFindQuery() }
 
         val clear = findViewById<Button>(R.id.clear_text)
         clear.setOnClickListener { clearURL() }
@@ -42,7 +39,9 @@ class MainActivity : AppCompatActivity() {
         result.setText("")
     }
 
-    private fun toFindHost(ip : String) {
+    private fun toFindHost() {
+        val input = findViewById<EditText>(R.id.editText)
+        val ip = input.text.toString()
         val result = findViewById<EditText>(R.id.resultText)
         try {
             val url = URL(ip)
@@ -52,7 +51,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun toFindPort(ip : String) {
+    private fun toFindPort() {
+        val input = findViewById<EditText>(R.id.editText)
+        val ip = input.text.toString()
         val result = findViewById<EditText>(R.id.resultText)
         try {
             val url = URL(ip)
@@ -62,7 +63,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun toFindPath(ip : String) {
+    private fun toFindPath() {
+        val input = findViewById<EditText>(R.id.editText)
+        val ip = input.text.toString()
         val result = findViewById<EditText>(R.id.resultText)
         try {
             val url = URL(ip)
@@ -72,7 +75,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun toFindProtocol(ip : String) {
+    private fun toFindProtocol() {
+        val input = findViewById<EditText>(R.id.editText)
+        val ip = input.text.toString()
         val result = findViewById<EditText>(R.id.resultText)
         try {
             val url = URL(ip)
@@ -82,7 +87,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun toFindQuery(ip : String) {
+    private fun toFindQuery() {
+        val input = findViewById<EditText>(R.id.editText)
+        val ip = input.text.toString()
         val result = findViewById<EditText>(R.id.resultText)
         try {
             val url = URL(ip)
