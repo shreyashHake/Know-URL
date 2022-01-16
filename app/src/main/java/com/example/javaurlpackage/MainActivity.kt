@@ -91,11 +91,16 @@ class MainActivity : AppCompatActivity() {
         val input = findViewById<EditText>(R.id.editText)
         val ip = input.text.toString()
         val result = findViewById<EditText>(R.id.resultText)
-        try {
-            val url = URL(ip)
-            result.setText(url.query.toString())
-        } catch (e: Exception) {
-            result.setText(e.toString())
+        if (ip ==  "") {
+            result.setText(getString(R.string.error))
+        }
+       else {
+            try {
+                val url = URL(ip)
+                result.setText(url.query.toString())
+            } catch (e: Exception) {
+                result.setText(e.toString())
+            }
         }
     }
 
